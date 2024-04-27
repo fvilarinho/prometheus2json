@@ -1,0 +1,7 @@
+services:
+  prometheus2json:
+    build: .
+    image: ${DOCKER_REGISTRY_URL}/${DOCKER_REGISTRY_ID}/prometheus2json:${BUILD_VERSION}
+    container_name: prometheus2json
+    restart: always
+    hostname: prometheus2json
