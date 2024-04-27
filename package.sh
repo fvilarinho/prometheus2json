@@ -18,7 +18,7 @@ function prepareToExecute() {
 
 # Creates the container images.
 function package() {
-  $DOCKER_CMD compose -f stack-build.yml build
+  $DOCKER_CMD compose build
 }
 
 # Main function.

@@ -25,7 +25,7 @@ function auth() {
 
 # Publishes the container images.
 function publish() {
-  $DOCKER_CMD compose -f stack-build.yml push
+  $DOCKER_CMD compose push
 }
 
 # Main function.
